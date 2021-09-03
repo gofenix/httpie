@@ -1,0 +1,15 @@
+[package]
+name = "httpie"
+version = "0.1.0"
+edition = "2018"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+anyhow = "1" # 错误处理
+clap = "3.0.0-beta.4" # 命令行解析
+colored = "2" # 命令行彩色显示
+jsonxf = "1.1" # json pretty print
+mime = "0.3" # 处理mime类型
+reqwest = {version = "0.11", features = ["json"]} # http客户端
+tokio = {version= "1", features = ["full"]} # 异步处理库
